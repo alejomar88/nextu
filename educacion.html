@@ -8,7 +8,7 @@
 	</head>
 	<body>
 	<header>
-	<img src="Imagenes/ultimo3.svg" alt="Logo Alejandro" width="35%">
+	<img src="Imagenes/ultimo3.svg" alt="Logo Alejandro" width="120px">
 			<h1>HOJA DE VIDA</h1>
 			<h2>Alejandro Aguilar Fuentes</h2>
             <h3>Managua, Nicaragua. 08 de agosto.</h3>
@@ -20,7 +20,7 @@
 				</ul>
 		</nav>
 	<section>
-		<h2>Educacion</h2>
+		<h2>Educaci&oacute;n</h2>
    <table border="1" id="Tabla_Educacion">
        <tr>
            <th scope="col"><strong>A&ntilde;o</strong></th>
@@ -36,7 +36,7 @@
        </tr>
        <tr>
            <td>2009</td>
-           <td>Colegio Hermann Gmeiner</td>
+           <td>UdeM</td>
            <td>Managua, Nicaragua</td>
            <td>No</td>
        </tr>
@@ -46,7 +46,25 @@
            <td>Managua, Nicaragua</td>
            <td>Si</td>
        </tr>
-   </table>
+   </table>   
+   <form  action="" method="get">
+        <h3>Agregar Estudios</h3>
+            <label><strong>A&ntilde;o:</strong></label>
+            <input list="ano_escolar" name="lista"/>
+            <datalist  id="ano_escolar">
+                <option label="2015" value="2015">
+                <option label="2016" value="2016">
+                <option label="2017" value="2017">
+            </datalist><br/>
+            <label><strong>Instituci&oacute;n:</strong></label>
+            <input type="text" name="institucion" required><br/>
+            <label><strong>Lugar:</strong></label>
+            <textarea name="Lugar" placeholder="Lugar"></textarea><br/>
+            <label><strong>Culmino?:</strong></label>
+            <input type="radio" value="si" name="culmino">Si
+            <input type="radio" value="no" name="culmino">No<br/>
+            <input type="submit" title="enviar">
+   </form>
     </section>
 	</header>
 	<footer>
